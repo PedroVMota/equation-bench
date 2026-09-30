@@ -1,9 +1,5 @@
-"use client";
+import { EquationBench } from "@/app/_components/equation-bench/equation-bench";
 
-import dynamic from "next/dynamic";
-
-const EquationBench = dynamic(() => import("./EquationBench"), { ssr: false });
-
-export default function Home() {
+export default function Home(): React.ReactElement {
   return <EquationBench />;
 }

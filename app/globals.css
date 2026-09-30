@@ -1,5 +1,10 @@
 @import "tailwindcss";
 
+@theme inline {
+  --font-sans: var(--font-plex-sans), system-ui, sans-serif;
+  --font-mono: var(--font-plex-mono), monospace;
+}
+
 :root {
   --code-command: #4f46e5;
   --code-keyword: #b45309;
@@ -35,10 +40,6 @@ body {
   margin: 0;
 }
 
-.mono {
-  font-family: var(--font-mono), monospace;
-}
-
 .katex-icon .katex {
   font-size: 1.05rem;
 }
@@ -52,11 +53,7 @@ body {
 }
 
 .cm-scroller {
-  font-family: var(--font-mono), monospace !important;
+  font-family: var(--font-plex-mono), monospace !important;
   font-size: 0.95rem;
   line-height: 1.7;
-}
-
-.preview-body .katex {
-  font-size: 1.5rem;
 }
